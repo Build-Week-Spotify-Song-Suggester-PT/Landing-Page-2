@@ -1,9 +1,16 @@
-h1 {
-  position: absolute;
+body {
+  background-image: url("../Images/mohammad-metri-1oKxSKSOowE-unsplash.jpg");
+}
+.container {
+  width: 90%;
+}
+header {
+  display: flex;
+}
+header h1 {
+  justify-content: center;
   width: 794px;
   height: 179px;
-  left: 322px;
-  top: 36px;
   font-family: Righteous;
   font-style: normal;
   font-weight: normal;
