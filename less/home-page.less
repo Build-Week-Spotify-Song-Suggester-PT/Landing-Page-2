@@ -53,15 +53,45 @@ header{
         font-style: normal;
         font-weight: normal;
         font-size: 34px;
-        color: #FBCA6D;
+        
         border-radius: 15px;
     }
     .filled{
-        background-color: white;
-
+        background: #FBCA6D;
+        color: black;
+        font-weight: bold;
+        &:hover{
+            box-shadow: 0px 0px 30px #FBCA6D;
+            transition-duration: .35s;
+            cursor: pointer;
     }
+}
     .hollow{
         background-color: none;
         border: 3px solid #FBCA6D;
+        color: #FBCA6D;
+        &:hover{
+            box-shadow: 0px 0px 30px #FBCA6D;
+            transition-duration: .35s;
+            cursor: pointer;
+         }
     }
+}
+.home-nav{
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    background-color: rgba(84, 84, 84, 0.49);
+    a{
+        margin: 10px 100px;
+        font-size: 20px;
+        text-decoration: none;
+        color: white;
+        &:hover{
+            text-shadow: 0px 0px 15px #FBCA6D;
+            color: #FBCA6D;
+            transition-duration: .35s;
+        }
+    }
+    
 }
