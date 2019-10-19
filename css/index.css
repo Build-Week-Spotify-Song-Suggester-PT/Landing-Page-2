@@ -1,3 +1,4 @@
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -126,15 +127,20 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-.home-page {
-  background: url("../images/mohammad-metri-1oKxSKSOowE-unsplash.jpg") no-repeat center center fixed;
+.signbody {
+  background: url("../Images/mohammad-metri-1oKxSKSOowE-unsplash.jpg") no-repeat center center fixed;
+
   background-size: cover;
 }
 header {
   display: flex;
+
+  border: 1px solid yellow;
   justify-content: center;
   width: 90%;
+
   margin: 40px auto;
+
 }
 header h1 {
   width: 794px;
@@ -150,6 +156,7 @@ header h1 {
   text-align: center;
   color: #E9E9D6;
   text-shadow: 0px 0px 15px #BD6F37;
+
   -webkit-text-stroke: 3px #BD5A37;
 }
 header h1 #flicker-s {
@@ -158,10 +165,59 @@ header h1 #flicker-s {
 }
 .spacer {
   height: 600px;
+
 }
 .buttons {
   display: flex;
   justify-content: space-around;
+
+  width: 70%;
+}
+.AboutTitle {
+  font-size: 55px;
+}
+.row {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.column {
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+  height: 100%;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.Acontainer {
+  padding: 0 16px;
+  background-color: #4392F1;
+}
+.Acontainer::after,
+.Acontainer .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.title2 {
+  color: grey;
+}
+.button2 {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+.button2:hover {
+  background-color: #555;
+
   width: 70vw;
   margin: 0 auto;
 }
