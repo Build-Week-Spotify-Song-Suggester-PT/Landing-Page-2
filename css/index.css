@@ -155,6 +155,7 @@ header h1 {
 header h1 #flicker-s {
   color: rgba(255, 255, 255, 0);
   text-shadow: 0px 0px 60px #BD6F37;
+  animation: flicker 1.5s infinite alternate;
 }
 .spacer {
   height: 600px;
@@ -213,6 +214,26 @@ header h1 #flicker-s {
   text-shadow: 0px 0px 15px #FBCA6D;
   color: #FBCA6D;
   transition-duration: 0.35s;
+}
+/* Animate neon flicker */
+@keyframes flicker {
+  0%,
+  14%,
+  21%,
+  23%,
+  25%,
+  53%,
+  58%,
+  100% {
+    color: #E9E9D6;
+    text-shadow: 0 0 6rem #FFFFFF, 0 0 8rem #BD6F37, 0 0 10rem #BD6F37;
+  }
+  18%,
+  24%,
+  55% {
+    text-shadow: none;
+    color: rgba(255, 255, 255, 0);
+  }
 }
 .aboutbody {
   background-color: #76949F;

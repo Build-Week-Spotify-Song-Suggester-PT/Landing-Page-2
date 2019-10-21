@@ -29,6 +29,7 @@ header{
     #flicker-s{
         color: rgba(255, 255, 255, 0);
         text-shadow: 0px 0px 60px #BD6F37;
+        animation: flicker 1.5s infinite alternate;
     }
   }
 }
@@ -94,4 +95,25 @@ header{
         }
     }
     
+}
+/* Animate neon flicker */
+@keyframes flicker {
+    
+    0%, 14%, 21%, 23%, 25%, 53%, 58%, 100% {
+        color: #E9E9D6;
+        text-shadow:
+            // -0.2rem -0.2rem 1rem #fff, Use these lines if we need more glow.
+            // 0.2rem 0.2rem 1rem #fff,
+            // 0 0 2rem #BD6F37,
+            // 0 0 4rem #BD6F37,
+            0 0 6rem #FFFFFF,
+            0 0 8rem #BD6F37,
+            0 0 10rem #BD6F37;   
+    }
+    
+    18%, 24%, 55% {        
+        text-shadow: none;
+        color: rgba(255, 255, 255, 0)
+        // box-shadow: none;
+    }    
 }
