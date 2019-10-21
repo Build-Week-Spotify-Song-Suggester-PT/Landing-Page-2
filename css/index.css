@@ -178,10 +178,16 @@ header h1 #flicker-s {
   font-size: 34px;
   border-radius: 15px;
 }
+.buttons a {
+  text-decoration: none;
+}
 .buttons .filled {
   background: #FBCA6D;
   color: black;
   font-weight: bold;
+}
+.buttons .filled a:visited {
+  color: black;
 }
 .buttons .filled:hover {
   box-shadow: 0px 0px 30px #FBCA6D;
@@ -191,6 +197,9 @@ header h1 #flicker-s {
 .buttons .hollow {
   background-color: none;
   border: 3px solid #FBCA6D;
+  color: #FBCA6D;
+}
+.buttons .hollow a:visited {
   color: #FBCA6D;
 }
 .buttons .hollow:hover {
@@ -207,6 +216,7 @@ header h1 #flicker-s {
 .home-nav a {
   margin: 10px 100px;
   font-size: 20px;
+  font-family: Raleway;
   text-decoration: none;
   color: white;
 }
