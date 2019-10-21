@@ -178,6 +178,12 @@ header h1 #flicker-s {
   font-size: 34px;
   border-radius: 15px;
 }
+.buttons a {
+  text-decoration: none;
+}
+.buttons a:visited {
+  color: #FBCA6D;
+}
 .buttons .filled {
   background: #FBCA6D;
   color: black;
@@ -207,6 +213,7 @@ header h1 #flicker-s {
 .home-nav a {
   margin: 10px 100px;
   font-size: 20px;
+  font-family: Raleway;
   text-decoration: none;
   color: white;
 }
