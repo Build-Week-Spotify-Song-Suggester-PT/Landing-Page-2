@@ -218,20 +218,21 @@ header h1 #flicker-s {
 /* Animate neon flicker */
 @keyframes flicker {
   0%,
-  19%,
+  14%,
   21%,
   23%,
   25%,
-  54%,
-  56%,
+  53%,
+  58%,
   100% {
-    color: #BD6F37;
-    text-shadow: 0 0 2rem #BD6F37, 0 0 4rem #BD6F37, 0 0 6rem #BD6F37, 0 0 8rem #BD6F37, 0 0 10rem #BD6F37;
+    color: #E9E9D6;
+    text-shadow: 0 0 6rem #FFFFFF, 0 0 8rem #BD6F37, 0 0 10rem #BD6F37;
   }
-  20%,
+  18%,
   24%,
   55% {
     text-shadow: none;
+    color: rgba(255, 255, 255, 0);
   }
 }
 .aboutbody {
