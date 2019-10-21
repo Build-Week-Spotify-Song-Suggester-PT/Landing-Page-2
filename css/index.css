@@ -181,13 +181,13 @@ header h1 #flicker-s {
 .buttons a {
   text-decoration: none;
 }
-.buttons a:visited {
-  color: #FBCA6D;
-}
 .buttons .filled {
   background: #FBCA6D;
   color: black;
   font-weight: bold;
+}
+.buttons .filled a:visited {
+  color: black;
 }
 .buttons .filled:hover {
   box-shadow: 0px 0px 30px #FBCA6D;
@@ -197,6 +197,9 @@ header h1 #flicker-s {
 .buttons .hollow {
   background-color: none;
   border: 3px solid #FBCA6D;
+  color: #FBCA6D;
+}
+.buttons .hollow a:visited {
   color: #FBCA6D;
 }
 .buttons .hollow:hover {
