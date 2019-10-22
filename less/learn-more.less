@@ -1,5 +1,14 @@
 .learn {
-  font-family: Righteous;
+  font-family: Raleway;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
 }
 
 .cards {
@@ -7,19 +16,21 @@
   margin: 20px 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-evenly;
+  height: 400px;
   .product-card {
     // border: 5px solid blue;
-    margin: 20px 0;
+    // margin: 20px 0;
     background: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s;
     width: 50%;
     .container {
-      padding: 2px 16px;
+      padding: 10px 16px;
       h1 {
         font-size: 25px;
+        font-family: Righteous;
       }
       p {
         font-family: Raleway;
@@ -32,11 +43,31 @@
 }
 
 .reviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h1 {
+    font-size: 25px;
+    color: white;
+  }
   .review-card {
     margin: 20px 0;
     background: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s;
-    width: 20%;
+    width: 50%;
+    .container {
+      // border: 5px solid red;
+      padding: 10px 16px;
+      h2 {
+        font-size: 25px;
+        font-family: Righteous;
+      }
+      p {
+        font-family: Raleway;
+      }
+      .checked {
+        color: orange;
+      }
+    }
   }
 }
