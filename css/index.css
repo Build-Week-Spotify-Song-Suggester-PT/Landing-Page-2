@@ -245,6 +245,21 @@ header h1 #flicker-s {
     color: rgba(255, 255, 255, 0);
   }
 }
+.learn {
+  font-family: Righteous;
+}
+.product-card {
+  border: 5px solid blue;
+  box-shadow: 0 4px 8px #000000;
+  transition: 0.3s;
+  width: 40%;
+}
+.product-card .container {
+  padding: 2px 16px;
+}
+.product-card .container h1 {
+  font-size: 25px;
+}
 .aboutbody {
   background-color: #76949F;
 }
