@@ -298,17 +298,38 @@ header h1 #flicker-s {
 .learn {
   font-family: Righteous;
 }
-.product-card {
-  border: 5px solid blue;
-  box-shadow: 0 4px 8px #000000;
-  transition: 0.3s;
-  width: 40%;
+.cards {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
-.product-card .container {
+.cards .product-card {
+  margin: 20px 0;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s;
+  width: 50%;
+}
+.cards .product-card .container {
   padding: 2px 16px;
 }
-.product-card .container h1 {
+.cards .product-card .container h1 {
   font-size: 25px;
+}
+.cards .product-card .container p {
+  font-family: Raleway;
+}
+.cards .product-card:hover {
+  transform: scale(1.2);
+}
+.reviews .review-card {
+  margin: 20px 0;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s;
+  width: 20%;
 }
 .aboutbody {
   height: 100vh;
