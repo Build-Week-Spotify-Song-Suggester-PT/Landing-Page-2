@@ -62,7 +62,7 @@ header{
         
     }
     .filled{
-        background: #FBCA6D;
+        background: @button-bg;
         color: black;
         font-weight: bold;
         a{
@@ -71,22 +71,22 @@ header{
         }
     }
         &:hover{
-            box-shadow: 0px 0px 30px #FBCA6D;
+            box-shadow: 0px 0px 30px @nav-hover;
             transition-duration: .35s;
             cursor: pointer;
     }
 }
     .hollow{
         background-color: none;
-        border: 3px solid #FBCA6D;
-        color: #FBCA6D;
+        border: 3px solid @button-bg;
+        color: @button-bg;
         a{
             &:visited{
-            color: #FBCA6D;
+            color: @button-bg;
         }
     }
         &:hover{
-            box-shadow: 0px 0px 30px #FBCA6D;
+            box-shadow: 0px 0px 30px @nav-hover;
             transition-duration: .35s;
             cursor: pointer;
          }
