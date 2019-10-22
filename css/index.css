@@ -340,29 +340,29 @@ header h1 #flicker-s {
   background-size: cover;
 }
 .AboutTitle {
-  margin: 30px;
+  margin: auto;
   width: 794px;
-  height: 179px;
+  height: 400px;
   font-family: Righteous;
   font-style: normal;
   font-weight: normal;
-  font-size: 144px;
+  font-size: 125px;
   line-height: 179px;
   display: flex;
   align-items: center;
   text-align: center;
-  color: #E9E9D6;
-  text-shadow: 0px 0px 15px #bc77ca;
-  -webkit-text-stroke: 3px #bd3795;
+  color: white;
+  text-shadow: 0px 0px 30px #F09819;
+  -webkit-text-stroke: 3px #FF512F;
 }
 .row {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   align-items: center;
   width: 100%;
 }
 .column {
+  margin: 30px;
   width: 33.3%;
   margin-bottom: 16px;
   padding: 0 8px;
@@ -370,22 +370,31 @@ header h1 #flicker-s {
 }
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  height: 490px;
+  margin: 75px 50px;
+}
+.card img {
+  display: inline-block;
 }
 .Acontainer {
-  padding: 0 16px;
-  background-color: #878E88;
+  padding: 30px 16px;
+  background-color: #9f9eac;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  display: inline-block;
+}
+.Acontainer p {
+  margin: 8px;
 }
 .Acontainer #cardname {
   display: flex;
   justify-content: center;
-  color: #B6CB9E;
+  color: #121212;
   font-family: Raleway;
 }
 .Acontainer #aboutpara {
   display: flex;
   justify-content: center;
-  color: #B6CB9E;
+  color: #121212;
   font-family: Raleway;
 }
 .Acontainer::after,
@@ -401,22 +410,21 @@ header h1 #flicker-s {
 .title2 {
   display: flex;
   justify-content: center;
-  color: #B6CB9E;
+  color: #121212;
   font-family: Raleway;
 }
 .button2 {
-  background-image: linear-gradient(to right, #DD5E89 0%, #F7BB97 51%, #DD5E89 100%);
+  background-image: linear-gradient(to right, #FF512F 0%, #F09819 51%, #FF512F 100%);
   border-style: ridge;
-  border-color: purple;
+  border-color: #121212;
   margin: 10px;
   font-family: "Arial Black", Gadget, sans-serif;
   font-size: 20px;
   padding: 15px;
   text-align: center;
   text-transform: uppercase;
-  transition: 0.5s;
   background-size: 200% auto;
-  color: #C51162;
+  color: #121212;
   box-shadow: 0 0 20px #eee;
   border-radius: 10px;
   width: 200px;
@@ -429,7 +437,4 @@ header h1 #flicker-s {
   background-position: right center;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   margin: 8px 10px 12px;
-}
-.button2 .button2 {
-  background-image: linear-gradient(to right, #DD5E89 0%, #F7BB97 51%, #DD5E89 100%);
 }
