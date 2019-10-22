@@ -144,6 +144,56 @@ table {
   color: #FBCA6D;
   transition-duration: 0.35s;
 }
+.site-nav {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+.site-nav a {
+  margin: 10px 50px;
+  font-size: 20px;
+  font-family: Raleway;
+  text-decoration: none;
+  color: white;
+}
+.site-nav a:hover {
+  text-shadow: 0px 0px 15px #FBCA6D;
+  color: #FBCA6D;
+  transition-duration: 0.35s;
+}
+.site-header {
+  background: linear-gradient(90deg, #c37d92, #7b4b94, #c37d92);
+  height: 75px;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 0px;
+  margin: 0px 0px;
+}
+.site-header h2 {
+  display: flex;
+  align-items: center;
+  font-family: Righteous;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  color: #ffffff;
+  height: 100%;
+}
+.site-sign-up-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #7b4b94;
+  border-radius: 15px;
+  font-size: 20px;
+  font-family: Raleway;
+  padding: 20px;
+}
+.site-sign-up-button a {
+  text-decoration: none;
+  color: white;
+}
 .signbody {
   background: url("../Images/mohammad-metri-1oKxSKSOowE-unsplash.jpg") no-repeat center center fixed;
   background-size: cover;
