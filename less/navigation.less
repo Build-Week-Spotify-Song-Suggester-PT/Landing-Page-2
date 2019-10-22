@@ -35,7 +35,7 @@
 }
 
 .site-header {
-    background: linear-gradient(90deg, rgb(195, 125, 146), rgb(123, 75, 148), rgb(195, 125, 146));
+    background: linear-gradient(90deg, #3b1b0f, #BD5A37, #3b1b0f);
     height: 75px;
     width: 100%;
     justify-content: space-around;
@@ -58,11 +58,21 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(123, 75, 148);
-    border-radius: 15px;
+    background-color: #f27144;
+    border: 2px solid white;
+    border-radius: 20px;
     font-size: 20px;
     font-family: Raleway;
-    padding: 20px;
+    padding: 15px;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    cursor: pointer;
+
+  &:hover {
+    background-position: right center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    margin: 8px 0px 12px;
+    background-color: #BD5A37;
+  }
     a{
         text-decoration: none;
         color: white;

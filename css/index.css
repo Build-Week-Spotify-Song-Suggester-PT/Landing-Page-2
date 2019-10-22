@@ -162,7 +162,7 @@ table {
   transition-duration: 0.35s;
 }
 .site-header {
-  background: linear-gradient(90deg, #c37d92, #7b4b94, #c37d92);
+  background: linear-gradient(90deg, #3b1b0f, #BD5A37, #3b1b0f);
   height: 75px;
   width: 100%;
   justify-content: space-around;
@@ -184,11 +184,20 @@ table {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #7b4b94;
-  border-radius: 15px;
+  background-color: #f27144;
+  border: 2px solid white;
+  border-radius: 20px;
   font-size: 20px;
   font-family: Raleway;
-  padding: 20px;
+  padding: 15px;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  cursor: pointer;
+}
+.site-sign-up-button:hover {
+  background-position: right center;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  margin: 8px 0px 12px;
+  background-color: #BD5A37;
 }
 .site-sign-up-button a {
   text-decoration: none;
@@ -360,6 +369,51 @@ header h1 #flicker-s {
 }
 .reviews .review-card .container .checked {
   color: orange;
+}
+.main-content {
+  display: flex;
+  width: 80%;
+  margin: 50px auto;
+  justify-content: space-between;
+}
+.main-content h3 {
+  font-family: 'Raleway';
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.main-content p {
+  font-family: 'Raleway';
+  font-size: 18px;
+  line-height: 25px;
+}
+.main-content .info-card {
+  width: 45%;
+}
+.main-content .info-card address {
+  font-family: 'Raleway', sans-serif;
+  font-style: italic;
+  margin: 20px 0px;
+}
+.main-content .info-card textarea {
+  height: 100px;
+  width: 95%;
+}
+.main-content .info-card input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f27144;
+  border: 2px solid white;
+  border-radius: 10px;
+  font-size: 20px;
+  font-family: Raleway;
+  padding: 8px;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  cursor: pointer;
+}
+.main-content .info-card input:hover {
+  background-position: right center;
+  background-color: #FBCA6D;
 }
 .aboutbody {
   height: 100vh;
