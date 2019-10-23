@@ -11,26 +11,33 @@
 }
 .AboutTitle{
    .titlex;
+
    margin-bottom: 30px;
    @media @tablet{
      border: none;
      background: none;
    }
+
    @media @phone{
-     width: 40%;
+     width: 120%;
+     margin:20px;
+     .flexwrapcenter;
    }
   h2{
+
     @media @tablet{
       font-size: 80%;
     }
+
     @media @phone{
-    font-size: 55px;
+    font-size: 90px;
     }
 
   }
   
 }
 .row{
+
   display: flex;
    flex-wrap: wrap;
    justify-content: space-around;
@@ -39,6 +46,7 @@
      display:flex;
      flex-direction: column;
      justify-content: center;
+
    }
    @media @tablet {
 
@@ -51,6 +59,7 @@
 
 
 .column {
+
   display:flex;
  flex-flow: column wrap;
    margin: 20px;
@@ -62,6 +71,7 @@
       width: 75%;
  
     }
+
     
      }
     
@@ -71,6 +81,7 @@
     width: 110%;
     margin:0 auto;
     border: 8px ridge  #3b1b0f;
+
     display: flex;
     flex-direction: column;
     img{
@@ -96,9 +107,10 @@
       
       }
       
+
     
     #cardname{
-      text-align:center;
+      
       color: @paragraph-color;
       font-family: Raleway;
       font-weight: bold;
@@ -106,16 +118,18 @@
     }
       
       #title2 {
-        margin-top: 1px;
+        margin-top: 10px;
         text-decoration: underline;
         text-align:center;
         color: @paragraph-color;
         font-family: Raleway;
         font-weight: bold;
       }
+
        p{
       display:flex;
       justify-content: center;
+
       color:  @paragraph-color;
       font-family: Raleway;
       margin: 8px;
@@ -127,6 +141,7 @@
       
       }
        }
+
 
       
  
@@ -149,6 +164,7 @@
 
   
   
+
   .button2 {
    .button2x(60%, 10px,5%);
    @media @tablet {
@@ -159,4 +175,7 @@
    
   
    
+
   }
+   
+  

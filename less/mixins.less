@@ -52,20 +52,27 @@
   text-shadow: 0px 0px 30px #696969;
   -webkit-text-stroke: 3px coral;
 }
-  
+
 .product-cards {
-  margin: 20px 0;
+  margin: 50px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  h1 {
+    font-size: 25px;
+    color: white;
+    @media @tablet {
+      color: black;
+    }
+  }
   .product-card {
     margin: 10px 0;
     background: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s;
-    width: 50%;
+    width: 80%;
     .container {
-      padding: 10px 16px;
+      padding: 20px 16px;
       h2 {
         font-size: 25px;
         font-family: Righteous;
@@ -82,4 +89,10 @@
   .checked {
     color: orange;
   }
+}
+
+.flexwrapcenter(){
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }

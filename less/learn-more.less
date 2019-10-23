@@ -9,6 +9,9 @@
   min-width: 100%;
   min-height: 100%;
   z-index: -1;
+  @media @tablet {
+    display: none;
+  }
 }
 
 .cards {
@@ -19,9 +22,5 @@
 }
 
 .reviews {
-  h1 {
-    font-size: 25px;
-    color: white;
-  }
   .review-cards();
 }
