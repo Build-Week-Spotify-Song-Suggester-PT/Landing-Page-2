@@ -162,7 +162,7 @@ table {
   transition-duration: 0.35s;
 }
 .site-header {
-  background: linear-gradient(90deg, #3b1b0f, #BD5A37, #3b1b0f);
+  background: linear-gradient(90deg, #3b1b0f, #bd5a37, #3b1b0f);
   height: 75px;
   width: 100%;
   justify-content: space-around;
@@ -184,7 +184,7 @@ table {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(90deg, #3b1b0f, #BD5A37, #3b1b0f);
+  background: linear-gradient(90deg, #3b1b0f, #bd5a37, #3b1b0f);
   border: 2px solid white;
   border-radius: 20px;
   font-size: 20px;
@@ -197,7 +197,7 @@ table {
   background-position: right center;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   margin: 8px 0px 12px;
-  background-color: #BD5A37;
+  background-color: #bd5a37;
 }
 .site-sign-up-button a {
   text-decoration: none;
