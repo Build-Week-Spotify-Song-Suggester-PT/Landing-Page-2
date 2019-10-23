@@ -620,12 +620,12 @@ header h1 #flicker-s {
 }
 @media (max-width: 500px) {
   .AboutTitle {
-    width: 80%;
-  }
-}
-@media (max-width: 800px) {
-  .AboutTitle h2 {
-    font-size: 105px;
+    width: 120%;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
   }
 }
 @media (max-width: 500px) {
@@ -651,11 +651,21 @@ header h1 #flicker-s {
   }
 }
 .column {
-  margin: 10px;
-  width: 30%;
+
+  margin: 20px;
+  width: 40%;
+
   margin-bottom: 16px;
   padding: 0 8px;
-  height: 100%;
+  height: 40%;
+}
+@media (max-width: 500px) {
+  .column {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -664,7 +674,6 @@ header h1 #flicker-s {
   height: 70%;
   width: 70%;
   min-width: 120px;
-  padding-top: 0;
 }
 @media (max-width: 800px) {
   .card {
@@ -676,19 +685,6 @@ header h1 #flicker-s {
     width: 270%;
   }
 }
-.card img {
-  display: block;
-  border: 0;
-  width: 100%;
-  height: auto;
-}
-@media (max-width: 500px) {
-  .card img {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-}
 .Acontainer {
   padding: 1.4em;
   background-color: #9f9eac;
@@ -698,14 +694,13 @@ header h1 #flicker-s {
   align-items: center;
 }
 .Acontainer #cardname {
-  text-align: center;
   color: #121212;
   font-family: Raleway;
   font-weight: bold;
   text-decoration: underline ;
 }
 .Acontainer #title2 {
-  margin-top: 1px;
+  margin-top: 10px;
   text-decoration: underline;
   text-align: center;
   color: #121212;
@@ -713,23 +708,10 @@ header h1 #flicker-s {
   font-weight: bold;
 }
 .Acontainer #aboutpara {
-  display: flex;
-  justify-content: center;
   color: #121212;
   font-family: Raleway;
   margin: 8px;
   text-align: center;
-}
-.Acontainer::after,
-.Acontainer .row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-.Acontainer::after #buttonp,
-.Acontainer .row::after #buttonp {
-  display: flex;
-  justify-content: center;
 }
 .button2 {
   width: 12.5rem;
