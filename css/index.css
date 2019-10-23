@@ -525,10 +525,26 @@ header h1 #flicker-s {
   text-shadow: 0px 0px 30px #696969;
   -webkit-text-stroke: 3px coral;
 }
+@media (max-width: 500px) {
+  .AboutTitle {
+    width: 40%;
+  }
+}
+@media (max-width: 500px) {
+  .AboutTitle h2 {
+    font-size: 55px;
+  }
+}
 .row {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+@media (max-width: 500px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .column {
   margin: 30px;
@@ -546,11 +562,28 @@ header h1 #flicker-s {
   min-width: 120px;
   padding-top: 0;
 }
+@media (max-width: 1000px) {
+  .card {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .card {
+    width: 200%;
+  }
+}
 .card img {
   display: block;
   border: 0;
   width: 100%;
   height: auto;
+}
+@media (max-width: 500px) {
+  .card img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 .Acontainer {
   padding: 1.4em;
@@ -564,35 +597,32 @@ header h1 #flicker-s {
   font-weight: bold;
   text-decoration: underline ;
 }
-.Acontainer #cardname p {
-  margin: 8px;
+.Acontainer #title2 {
+  margin-top: 1px;
+  text-decoration: underline;
   text-align: center;
+  color: #121212;
+  font-family: Raleway;
+  font-weight: bold;
 }
-.Acontainer #cardname p #aboutpara {
+.Acontainer #aboutpara {
   display: flex;
   justify-content: center;
   color: #121212;
   font-family: Raleway;
+  margin: 8px;
+  text-align: center;
 }
-.Acontainer #cardname p #aboutpara::after,
-.Acontainer #cardname p #aboutpara .row::after {
+.Acontainer::after,
+.Acontainer .row::after {
   content: "";
   clear: both;
   display: table;
 }
-.Acontainer #cardname p #aboutpara::after #buttonp,
-.Acontainer #cardname p #aboutpara .row::after #buttonp {
+.Acontainer::after #buttonp,
+.Acontainer .row::after #buttonp {
   display: flex;
   justify-content: center;
-}
-.title2 {
-  margin-top: 1px;
-  display: flex;
-  justify-content: center;
-  color: #121212;
-  font-family: Raleway;
-  font-weight: bold;
-  text-decoration: underline;
 }
 .button2 {
   width: 200px;
