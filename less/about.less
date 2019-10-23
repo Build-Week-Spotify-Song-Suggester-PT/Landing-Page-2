@@ -18,6 +18,7 @@
   display: flex;
    flex-wrap: wrap;
    justify-content: center;
+  
 }
 
 
@@ -27,6 +28,7 @@
     margin-bottom: 16px;
     padding: 0 8px;
     height: 100%;
+ 
     
   }
   
@@ -55,28 +57,23 @@
     padding: 1.4em;
     background-color:#9f9eac;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        p{
-      margin: 8px;
-    
-        #cardname{
-      
-      display:flex;
-      justify-content: center;
+    #cardname{
+      text-align:center;
       color: @paragraph-color;
       font-family: Raleway;
       font-weight: bold;
       text-decoration: underline ;
+
+        p{
+      margin: 8px;
+      text-align: center;
     
         #aboutpara{
       display:flex;
       justify-content: center;
       color:  @paragraph-color;
       font-family: Raleway;
-
-    
-    
-  
-    &::after, .row::after {
+      &::after, .row::after {
     content: "";
     clear: both;
     display: table;
