@@ -11,14 +11,23 @@
 }
 .AboutTitle{
    .titlex;
+@media @tablet{
+  width:80%;
+}
+
+
    @media @phone{
      width: 120%;
      margin:20px;
      .flexwrapcenter;
    }
   h2{
+@media @tablet{
+  font-size: 105px;
+}
+
     @media @phone{
-    font-size: 55px;
+    font-size: 90px;
     }
   }
   
@@ -30,11 +39,16 @@
        flex-direction: column;
       
    }
+   @media @tablet{
+     display:flex;
+     justify-content: space-between;
+   }
   
 }
 
 
 .column {
+
     margin: 20px;
     width: 40%;
     margin-bottom: 16px;
@@ -46,6 +60,7 @@
       flex-direction: column;
       justify-content: center;
     }
+
 
     
     
@@ -61,11 +76,13 @@
     width: 70%;
     min-width: 120px;
     @media @tablet{
-      width: 100%;
+      width: 125%;
     }
     @media @phone{
+
       width:200%;
       
+
     }
     
    }
@@ -77,6 +94,7 @@
     display:flex;
     flex-direction: column;
     align-items: center;
+
     
     #cardname{
       
@@ -107,4 +125,7 @@
    .button2x(200px,10px,20px);
   
    
+
   }
+   
+  
