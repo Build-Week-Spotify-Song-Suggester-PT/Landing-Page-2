@@ -12,62 +12,16 @@
 }
 
 .cards {
-  // border: 5px solid red;
-  margin: 20px 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  height: 400px;
-  .product-card {
-    // border: 5px solid blue;
-    // margin: 20px 0;
-    background: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s;
-    width: 50%;
-    .container {
-      padding: 10px 16px;
-      h1 {
-        font-size: 25px;
-        font-family: Righteous;
-      }
-      p {
-        font-family: Raleway;
-      }
-    }
-  }
+  .product-cards();
   .product-card:hover {
     transform: scale(1.2);
   }
 }
 
 .reviews {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   h1 {
     font-size: 25px;
     color: white;
   }
-  .review-card {
-    margin: 20px 0;
-    background: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    width: 50%;
-    .container {
-      // border: 5px solid red;
-      padding: 10px 16px;
-      h2 {
-        font-size: 25px;
-        font-family: Righteous;
-      }
-      p {
-        font-family: Raleway;
-      }
-      .checked {
-        color: orange;
-      }
-    }
-  }
+  .review-cards();
 }
