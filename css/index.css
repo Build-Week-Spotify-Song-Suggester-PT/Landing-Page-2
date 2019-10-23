@@ -477,31 +477,31 @@ header h1 #flicker-s {
   background-color: #9f9eac;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
-.Acontainer p {
-  margin: 8px;
-}
-.Acontainer p #cardname {
-  display: flex;
-  justify-content: center;
+.Acontainer #cardname {
+  text-align: center;
   color: #121212;
   font-family: Raleway;
   font-weight: bold;
   text-decoration: underline ;
 }
-.Acontainer p #cardname #aboutpara {
+.Acontainer #cardname p {
+  margin: 8px;
+  text-align: center;
+}
+.Acontainer #cardname p #aboutpara {
   display: flex;
   justify-content: center;
   color: #121212;
   font-family: Raleway;
 }
-.Acontainer p #cardname #aboutpara::after,
-.Acontainer p #cardname #aboutpara .row::after {
+.Acontainer #cardname p #aboutpara::after,
+.Acontainer #cardname p #aboutpara .row::after {
   content: "";
   clear: both;
   display: table;
 }
-.Acontainer p #cardname #aboutpara::after #buttonp,
-.Acontainer p #cardname #aboutpara .row::after #buttonp {
+.Acontainer #cardname p #aboutpara::after #buttonp,
+.Acontainer #cardname p #aboutpara .row::after #buttonp {
   display: flex;
   justify-content: center;
 }
