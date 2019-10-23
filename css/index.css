@@ -1,18 +1,27 @@
 .product-cards {
-  margin: 20px 0;
+  margin: 50px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.product-cards h1 {
+  font-size: 25px;
+  color: white;
+}
+@media (max-width: 800px) {
+  .product-cards h1 {
+    color: black;
+  }
 }
 .product-cards .product-card {
   margin: 10px 0;
   background: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   transition: transform 0.3s;
-  width: 50%;
+  width: 80%;
 }
 .product-cards .product-card .container {
-  padding: 10px 16px;
+  padding: 20px 16px;
 }
 .product-cards .product-card .container h2 {
   font-size: 25px;
@@ -22,20 +31,29 @@
   font-family: Raleway;
 }
 .review-cards {
-  margin: 20px 0;
+  margin: 50px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.review-cards h1 {
+  font-size: 25px;
+  color: white;
+}
+@media (max-width: 800px) {
+  .review-cards h1 {
+    color: black;
+  }
 }
 .review-cards .product-card {
   margin: 10px 0;
   background: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   transition: transform 0.3s;
-  width: 50%;
+  width: 80%;
 }
 .review-cards .product-card .container {
-  padding: 10px 16px;
+  padding: 20px 16px;
 }
 .review-cards .product-card .container h2 {
   font-size: 25px;
@@ -445,21 +463,35 @@ header h1 #flicker-s {
   min-height: 100%;
   z-index: -1;
 }
+@media (max-width: 800px) {
+  #myVideo {
+    display: none;
+  }
+}
 .cards {
-  margin: 20px 0;
+  margin: 50px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.cards h1 {
+  font-size: 25px;
+  color: white;
+}
+@media (max-width: 800px) {
+  .cards h1 {
+    color: black;
+  }
 }
 .cards .product-card {
   margin: 10px 0;
   background: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   transition: transform 0.3s;
-  width: 50%;
+  width: 80%;
 }
 .cards .product-card .container {
-  padding: 10px 16px;
+  padding: 20px 16px;
 }
 .cards .product-card .container h2 {
   font-size: 25px;
@@ -472,7 +504,7 @@ header h1 #flicker-s {
   transform: scale(1.2);
 }
 .reviews {
-  margin: 20px 0;
+  margin: 50px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -481,15 +513,20 @@ header h1 #flicker-s {
   font-size: 25px;
   color: white;
 }
+@media (max-width: 800px) {
+  .reviews h1 {
+    color: black;
+  }
+}
 .reviews .product-card {
   margin: 10px 0;
   background: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   transition: transform 0.3s;
-  width: 50%;
+  width: 80%;
 }
 .reviews .product-card .container {
-  padding: 10px 16px;
+  padding: 20px 16px;
 }
 .reviews .product-card .container h2 {
   font-size: 25px;
