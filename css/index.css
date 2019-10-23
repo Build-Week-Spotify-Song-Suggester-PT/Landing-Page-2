@@ -448,7 +448,7 @@ header h1 #flicker-s {
 .row {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
 }
 .column {
   margin: 30px;
