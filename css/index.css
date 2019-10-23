@@ -181,6 +181,12 @@ table {
   margin-top: 10%;
   background-color: rgba(84, 84, 84, 0.49);
 }
+@media (max-width: 500px) {
+  .home-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .home-nav a {
   margin: 10px 100px;
   font-size: 20px;
@@ -192,6 +198,22 @@ table {
   text-shadow: 0px 0px 15px #FBCA6D;
   color: #FBCA6D;
   transition-duration: 0.35s;
+}
+@media (max-width: 800px) {
+  .home-nav a {
+    margin: 10px 20px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 500px) {
+  .home-nav a {
+    margin: 0px 0px;
+    padding: 10px 0px;
+    width: 100%;
+    font-size: 16px;
+    border: 1px solid lightgray;
+    text-align: center;
+  }
 }
 .site-nav {
   display: flex;
@@ -256,11 +278,31 @@ table {
   background: url("../Images/mohammad-metri-1oKxSKSOowE-unsplash.jpg") no-repeat center center fixed;
   background-size: cover;
 }
+@media (max-width: 800px) {
+  .signbody {
+    background: linear-gradient(90deg, #3b1b0f, #bd5a37, #3b1b0f);
+  }
+}
+@media (max-width: 500px) {
+  .signbody {
+    background: linear-gradient(90deg, #3b1b0f, #bd5a37, #3b1b0f);
+  }
+}
 header {
   display: flex;
   justify-content: center;
   width: 90%;
   margin: 40px auto;
+}
+@media (max-width: 800px) {
+  header {
+    margin: 0px auto;
+  }
+}
+@media (max-width: 500px) {
+  header {
+    margin: 0px auto;
+  }
 }
 header h1 {
   width: 794px;
@@ -283,8 +325,32 @@ header h1 #flicker-s {
   text-shadow: 0px 0px 60px #BD6F37;
   animation: flicker 1.5s infinite alternate;
 }
+@media (max-width: 800px) {
+  header h1 {
+    font-size: 90px;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 500px) {
+  header h1 {
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+  }
+}
 .spacer {
   height: 600px;
+}
+@media (max-width: 800px) {
+  .spacer {
+    height: 100px;
+  }
+}
+@media (max-width: 500px) {
+  .spacer {
+    height: 0px;
+  }
 }
 .buttons {
   display: flex;
@@ -303,6 +369,20 @@ header h1 #flicker-s {
   font-weight: normal;
   font-size: 34px;
   border-radius: 15px;
+}
+@media (max-width: 800px) {
+  .buttons .button {
+    font-size: 20px;
+    width: 140px;
+    height: 60px;
+  }
+}
+@media (max-width: 500px) {
+  .buttons .button {
+    font-size: 16px;
+    width: 100px;
+    height: 40px;
+  }
 }
 .buttons a {
   text-decoration: none;
@@ -495,10 +575,26 @@ header h1 #flicker-s {
   text-shadow: 0px 0px 30px #696969;
   -webkit-text-stroke: 3px coral;
 }
+@media (max-width: 500px) {
+  .AboutTitle {
+    width: 40%;
+  }
+}
+@media (max-width: 500px) {
+  .AboutTitle h2 {
+    font-size: 55px;
+  }
+}
 .row {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+@media (max-width: 500px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .column {
   margin: 30px;
@@ -516,53 +612,67 @@ header h1 #flicker-s {
   min-width: 120px;
   padding-top: 0;
 }
+@media (max-width: 1000px) {
+  .card {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .card {
+    width: 200%;
+  }
+}
 .card img {
   display: block;
   border: 0;
   width: 100%;
   height: auto;
 }
+@media (max-width: 500px) {
+  .card img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
 .Acontainer {
   padding: 1.4em;
   background-color: #9f9eac;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
-.Acontainer p {
-  margin: 8px;
-}
-.Acontainer p #cardname {
-  display: flex;
-  justify-content: center;
+.Acontainer #cardname {
+  text-align: center;
   color: #121212;
   font-family: Raleway;
   font-weight: bold;
   text-decoration: underline ;
 }
-.Acontainer p #cardname #aboutpara {
+.Acontainer #title2 {
+  margin-top: 1px;
+  text-decoration: underline;
+  text-align: center;
+  color: #121212;
+  font-family: Raleway;
+  font-weight: bold;
+}
+.Acontainer #aboutpara {
   display: flex;
   justify-content: center;
   color: #121212;
   font-family: Raleway;
+  margin: 8px;
+  text-align: center;
 }
-.Acontainer p #cardname #aboutpara::after,
-.Acontainer p #cardname #aboutpara .row::after {
+.Acontainer::after,
+.Acontainer .row::after {
   content: "";
   clear: both;
   display: table;
 }
-.Acontainer p #cardname #aboutpara::after #buttonp,
-.Acontainer p #cardname #aboutpara .row::after #buttonp {
+.Acontainer::after #buttonp,
+.Acontainer .row::after #buttonp {
   display: flex;
   justify-content: center;
-}
-.title2 {
-  margin-top: 1px;
-  display: flex;
-  justify-content: center;
-  color: #121212;
-  font-family: Raleway;
-  font-weight: bold;
-  text-decoration: underline;
 }
 .button2 {
   width: 200px;

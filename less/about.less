@@ -11,13 +11,25 @@
 }
 .AboutTitle{
    .titlex;
-  
+   @media @phone{
+     width: 40%;
+   }
+  h2{
+    @media @phone{
+    font-size: 55px;
+    }
+  }
   
 }
 .row{
   display: flex;
    flex-wrap: wrap;
    justify-content: center;
+   @media @phone{
+    display: flex;
+       flex-direction: column;
+   }
+  
 }
 
 
@@ -28,7 +40,9 @@
     padding: 0 8px;
     height: 100%;
     
-  }
+     }
+    
+  
   
   .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -38,7 +52,12 @@
     width: 70%;
     min-width: 120px;
     padding-top: 0;
-    
+    @media @tablet{
+      width: 100%;
+    }
+    @media @phone{
+      width:200%;
+    }
     
     
      
@@ -47,7 +66,11 @@
 	  border: 0;
 	  width: 100%;
     height: auto;
-    
+    @media @phone{
+      display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+     }
     }
   }
 
@@ -55,28 +78,33 @@
     padding: 1.4em;
     background-color:#9f9eac;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        p{
-      margin: 8px;
     
-        #cardname{
-      
-      display:flex;
-      justify-content: center;
+    #cardname{
+      text-align:center;
       color: @paragraph-color;
       font-family: Raleway;
       font-weight: bold;
       text-decoration: underline ;
-    
-        #aboutpara{
+    }
+      
+      #title2 {
+        margin-top: 1px;
+        text-decoration: underline;
+        text-align:center;
+        color: @paragraph-color;
+        font-family: Raleway;
+        font-weight: bold;
+      }
+       #aboutpara{
       display:flex;
       justify-content: center;
       color:  @paragraph-color;
       font-family: Raleway;
+      margin: 8px;
+      text-align: center;
+       }
 
-    
-    
-  
-    &::after, .row::after {
+      &::after, .row::after {
     content: "";
     clear: both;
     display: table;
@@ -84,24 +112,23 @@
   #buttonp{
     display:flex;
     justify-content: center;
-  }
+    
+    
+     
+  
     }
       }
         }
-          }
-            }
+          
+            
+          
+          
 
 
-  .title2 {
-    margin-top: 1px;
-    display:flex;
-    justify-content: center;
-    color: @paragraph-color;
-    font-family: Raleway;
-    font-weight: bold;
-    text-decoration: underline;
-  }
+  
   
   .button2 {
-   .button2x(200px,10px,20px)
+   .button2x(200px,10px,20px);
+  
+   
   }
