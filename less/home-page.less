@@ -2,6 +2,12 @@
 .signbody{
     background: url("../Images/mohammad-metri-1oKxSKSOowE-unsplash.jpg") no-repeat center center fixed;
     background-size: cover;
+    @media @tablet {
+        background: linear-gradient(90deg, #3b1b0f, #bd5a37, #3b1b0f);
+    }
+    @media @phone {
+        background: linear-gradient(90deg, #3b1b0f, #bd5a37, #3b1b0f);
+    }
 }
 
 header{
@@ -9,6 +15,12 @@ header{
   justify-content: center;
   width: 90%;
   margin: 40px auto;
+  @media @tablet {
+        margin: 0px auto;
+    }
+    @media @phone {
+        margin: 0px auto;
+    }
 
   h1 {
     width: 794px;
@@ -31,11 +43,27 @@ header{
         text-shadow: 0px 0px 60px #BD6F37;
         animation: flicker 1.5s infinite alternate;
     }
+    @media @tablet {
+        font-size: 90px;
+        display: flex;
+        justify-content: center;
+    }
+    @media @phone {
+        font-size: 50px;
+        display: flex;
+        justify-content: center;
+    }
   }
 }
 
 .spacer{
     height: 600px;
+    @media @tablet {
+        height: 100px;
+    }
+    @media @phone {
+        height: 0px;
+    }
 }
 
 .buttons{
@@ -56,6 +84,16 @@ header{
         font-size: 34px;
         
         border-radius: 15px;
+        @media @tablet {
+        font-size: 20px;
+        width: 140px;
+        height: 60px;
+        }
+        @media @phone {
+        font-size: 16px;
+        width: 100px;
+        height: 40px;
+        }
     }
     a{
         text-decoration: none;
