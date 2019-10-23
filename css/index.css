@@ -575,14 +575,24 @@ header h1 #flicker-s {
   text-shadow: 0px 0px 30px #696969;
   -webkit-text-stroke: 3px coral;
 }
+@media (max-width: 800px) {
+  .AboutTitle {
+    width: 80%;
+  }
+}
 @media (max-width: 500px) {
   .AboutTitle {
-    width: 40%;
+    width: 80%;
+  }
+}
+@media (max-width: 800px) {
+  .AboutTitle h2 {
+    font-size: 105px;
   }
 }
 @media (max-width: 500px) {
   .AboutTitle h2 {
-    font-size: 55px;
+    font-size: 90px;
   }
 }
 .row {
@@ -596,9 +606,15 @@ header h1 #flicker-s {
     flex-direction: column;
   }
 }
+@media (max-width: 800px) {
+  .row {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 .column {
-  margin: 30px;
-  width: 33.3%;
+  margin: 10px;
+  width: 30%;
   margin-bottom: 16px;
   padding: 0 8px;
   height: 100%;
@@ -612,14 +628,14 @@ header h1 #flicker-s {
   min-width: 120px;
   padding-top: 0;
 }
-@media (max-width: 1000px) {
+@media (max-width: 800px) {
   .card {
-    width: 100%;
+    width: 125%;
   }
 }
 @media (max-width: 500px) {
   .card {
-    width: 200%;
+    width: 270%;
   }
 }
 .card img {
@@ -639,6 +655,9 @@ header h1 #flicker-s {
   padding: 1.4em;
   background-color: #9f9eac;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .Acontainer #cardname {
   text-align: center;
@@ -675,9 +694,9 @@ header h1 #flicker-s {
   justify-content: center;
 }
 .button2 {
-  width: 200px;
-  margin: 10px;
-  font-size: 20px;
+  width: 12.5rem;
+  margin: 0.625rem;
+  font-size: 1.25rem;
   background-image: linear-gradient(90deg, #3b1b0f, #bd5a37, #3b1b0f);
   border-style: ridge;
   border-color: #121212;
