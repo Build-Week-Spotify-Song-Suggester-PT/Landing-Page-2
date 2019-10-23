@@ -14,22 +14,24 @@ header{
   display: flex;
   justify-content: center;
   width: 90%;
-  margin: 40px auto;
+  margin: 3% auto 2% auto;
   @media @tablet {
-        margin: 0px auto;
+        margin: 3% auto;
     }
     @media @phone {
-        margin: 0px auto;
+        margin: 3% auto;
     }
 
   h1 {
-    width: 794px;
-    height: 179px;
+    display: flex;
+    justify-content: center;
+
+    width: 100vw;
+    height: fit-content;
     font-family: Righteous;
     font-style: normal;
     font-weight: normal;
     font-size: 144px;
-    line-height: 179px;
     /* identical to box height */
     display: flex;
     align-items: center;
@@ -57,7 +59,8 @@ header{
 }
 
 .spacer{
-    height: 600px;
+    height: 40vh;
+
     @media @tablet {
         height: 100px;
     }
