@@ -1,3 +1,52 @@
+.product-cards {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.product-cards .product-card {
+  margin: 10px 0;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s;
+  width: 50%;
+}
+.product-cards .product-card .container {
+  padding: 10px 16px;
+}
+.product-cards .product-card .container h2 {
+  font-size: 25px;
+  font-family: Righteous;
+}
+.product-cards .product-card .container p {
+  font-family: Raleway;
+}
+.review-cards {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.review-cards .product-card {
+  margin: 10px 0;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s;
+  width: 50%;
+}
+.review-cards .product-card .container {
+  padding: 10px 16px;
+}
+.review-cards .product-card .container h2 {
+  font-size: 25px;
+  font-family: Righteous;
+}
+.review-cards .product-card .container p {
+  font-family: Raleway;
+}
+.review-cards .checked {
+  color: orange;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -400,10 +449,9 @@ header h1 #flicker-s {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
-  height: 400px;
 }
 .cards .product-card {
+  margin: 10px 0;
   background: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   transition: transform 0.3s;
@@ -412,7 +460,7 @@ header h1 #flicker-s {
 .cards .product-card .container {
   padding: 10px 16px;
 }
-.cards .product-card .container h1 {
+.cards .product-card .container h2 {
   font-size: 25px;
   font-family: Righteous;
 }
@@ -423,6 +471,7 @@ header h1 #flicker-s {
   transform: scale(1.2);
 }
 .reviews {
+  margin: 20px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -431,23 +480,24 @@ header h1 #flicker-s {
   font-size: 25px;
   color: white;
 }
-.reviews .review-card {
-  margin: 20px 0;
+.reviews .product-card {
+  margin: 10px 0;
   background: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s;
   width: 50%;
 }
-.reviews .review-card .container {
+.reviews .product-card .container {
   padding: 10px 16px;
 }
-.reviews .review-card .container h2 {
+.reviews .product-card .container h2 {
   font-size: 25px;
   font-family: Righteous;
 }
-.reviews .review-card .container p {
+.reviews .product-card .container p {
   font-family: Raleway;
 }
-.reviews .review-card .container .checked {
+.reviews .checked {
   color: orange;
 }
 .main-content {
@@ -506,7 +556,7 @@ header h1 #flicker-s {
 }
 .AboutTitle {
   background-color: #ff4e00;
-  background-image: linear-gradient(90deg, #3b1b0f, #BD5A37, #3b1b0f);
+  background-image: linear-gradient(90deg, #3b1b0f, #bd5a37, #3b1b0f);
   margin: auto;
   margin-top: 30px;
   width: 700px;
@@ -521,7 +571,7 @@ header h1 #flicker-s {
   line-height: auto;
   align-items: center;
   text-align: center;
-  color: black	;
+  color: black;
   text-shadow: 0px 0px 30px #696969;
   -webkit-text-stroke: 3px coral;
 }
@@ -628,10 +678,10 @@ header h1 #flicker-s {
   width: 200px;
   margin: 10px;
   font-size: 20px;
-  background-image: linear-gradient(90deg, #3b1b0f, #BD5A37, #3b1b0f);
+  background-image: linear-gradient(90deg, #3b1b0f, #bd5a37, #3b1b0f);
   border-style: ridge;
   border-color: #121212;
-  font-family: "Arial Black", Gadget, sans-serif;
+  font-family: 'Arial Black', Gadget, sans-serif;
   padding: 15px;
   text-align: center;
   text-transform: uppercase;
