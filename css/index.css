@@ -568,6 +568,7 @@ header h1 #flicker-s {
 }
 .site-container {
   margin-top: 100px;
+  margin-bottom: 5%;
 }
 .main-content {
   display: flex;
