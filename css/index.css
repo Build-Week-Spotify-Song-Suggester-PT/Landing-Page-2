@@ -63,7 +63,9 @@
   font-family: Raleway;
 }
 .review-cards .checked {
-  color: orange;
+  background: -webkit-linear-gradient(90deg, #ffcc04, #ffae00, #ffe500);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -550,7 +552,9 @@ header h1 #flicker-s {
   font-family: Raleway;
 }
 .reviews .checked {
-  color: orange;
+  background: -webkit-linear-gradient(90deg, #ffcc04, #ffae00, #ffe500);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .site-container {
   margin-top: 100px;
@@ -797,4 +801,24 @@ header h1 #flicker-s {
   .button2 {
     font-size: 2%;
   }
+}
+.footer {
+  background-color: #ff4e00;
+  background-image: linear-gradient(90deg, #3b1b0f, #bd5a37, #3b1b0f);
+  height: 80%;
+  width: 100%;
+  padding: 20px;
+}
+.whitetext {
+  font-size: 13px;
+  color: white;
+  margin: 0px;
+  padding: 0px;
+}
+.whitelogo {
+  color: white;
+  font-size: 2em;
+}
+.whitelogo:hover {
+  color: lightgray;
 }

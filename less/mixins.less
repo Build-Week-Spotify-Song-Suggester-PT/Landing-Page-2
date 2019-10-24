@@ -8,7 +8,7 @@
   width: @width;
   margin: @marg;
   font-size: @font-sz;
-  height:auto;
+  height: auto;
   background-image: linear-gradient(90deg, #3b1b0f, #bd5a37, #3b1b0f);
   border-style: ridge;
   border-color: @paragraph-color;
@@ -87,7 +87,9 @@
 .review-cards {
   .product-cards();
   .checked {
-    color: orange;
+    background: -webkit-linear-gradient(90deg, #ffcc04, #ffae00, #ffe500);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }
 
