@@ -1,6 +1,7 @@
 .main-content{
     display: flex;
     width: 80%;
+    height: 80%;
     margin: 50px auto;
     justify-content: space-between;
 
@@ -23,10 +24,18 @@
     iframe{
         width: 45%;
         height: 400px;
-        border: 1px solid red;
+        @media @tablet{
+            width: 90%;
+            margin-top: 5%;
+        }
     }
     .info-card{
-        width: 45%;
+        width: 48%;
+
+        @media @tablet{
+            width: 90%;
+        }
+
         address{
             font-family: 'Raleway', sans-serif;
             font-style: italic;

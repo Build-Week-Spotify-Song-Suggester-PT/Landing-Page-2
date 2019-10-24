@@ -306,7 +306,7 @@ header #mobile-header-pic {
   }
   header #mobile-header-pic {
     display: flex;
-    width: 100%;
+    width: 80%;
     height: 20%;
     object-fit: fill;
   }
@@ -339,7 +339,7 @@ header h1 #flicker-s {
 }
 @media (max-width: 800px) {
   header h1 {
-    font-size: 90px;
+    font-size: 80px;
     display: flex;
     justify-content: center;
   }
@@ -516,6 +516,7 @@ header h1 #flicker-s {
 .main-content {
   display: flex;
   width: 80%;
+  height: 80%;
   margin: 50px auto;
   justify-content: space-between;
 }
@@ -539,10 +540,20 @@ header h1 #flicker-s {
 .main-content iframe {
   width: 45%;
   height: 400px;
-  border: 1px solid red;
+}
+@media (max-width: 800px) {
+  .main-content iframe {
+    width: 90%;
+    margin-top: 5%;
+  }
 }
 .main-content .info-card {
-  width: 45%;
+  width: 48%;
+}
+@media (max-width: 800px) {
+  .main-content .info-card {
+    width: 90%;
+  }
 }
 .main-content .info-card address {
   font-family: 'Raleway', sans-serif;
