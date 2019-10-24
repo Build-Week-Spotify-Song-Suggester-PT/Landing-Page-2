@@ -798,3 +798,23 @@ header h1 #flicker-s {
     font-size: 2%;
   }
 }
+.footer {
+  background-color: #ff4e00;
+  background-image: linear-gradient(90deg, #3b1b0f, #bd5a37, #3b1b0f);
+  height: 80%;
+  width: 100%;
+  padding: 20px;
+}
+.whitetext {
+  font-size: 13px;
+  color: white;
+  margin: 0px;
+  padding: 0px;
+}
+.whitelogo {
+  color: white;
+  font-size: 2em;
+}
+.whitelogo:hover {
+  color: lightgray;
+}
