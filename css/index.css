@@ -639,6 +639,7 @@ header h1 #flicker-s {
   background-color: #FBCA6D;
 }
 .aboutbody {
+  margin-bottom: 40%;
   height: 100vh;
   background: url("../Images/MM.png") no-repeat center center fixed;
   background-color: darkgrey;
