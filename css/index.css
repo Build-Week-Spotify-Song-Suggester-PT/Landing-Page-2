@@ -836,3 +836,16 @@ header h1 #flicker-s {
 .whitelogo:hover {
   color: lightgray;
 }
+.footerflex {
+  display: flex;
+  justify-content: center;
+}
+.iconcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.imagehover:hover {
+  opacity: 0.7;
+}
