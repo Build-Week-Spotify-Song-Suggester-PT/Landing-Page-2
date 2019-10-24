@@ -815,9 +815,11 @@ header h1 #flicker-s {
 .footer {
   background-color: #ff4e00;
   background-image: linear-gradient(90deg, #3b1b0f, #bd5a37, #3b1b0f);
-  height: 80%;
+  height: 3%;
   width: 100%;
   padding: 20px;
+  position: fixed;
+  bottom: 0;
 }
 .whitetext {
   font-size: 13px;
