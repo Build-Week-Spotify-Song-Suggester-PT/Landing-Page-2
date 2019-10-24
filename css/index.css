@@ -519,6 +519,13 @@ header h1 #flicker-s {
   margin: 50px auto;
   justify-content: space-between;
 }
+@media (max-width: 800px) {
+  .main-content {
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .main-content h3 {
   font-family: 'Raleway';
   font-size: 30px;
@@ -528,6 +535,11 @@ header h1 #flicker-s {
   font-family: 'Raleway';
   font-size: 18px;
   line-height: 25px;
+}
+.main-content iframe {
+  width: 45%;
+  height: 400px;
+  border: 1px solid red;
 }
 .main-content .info-card {
   width: 45%;
