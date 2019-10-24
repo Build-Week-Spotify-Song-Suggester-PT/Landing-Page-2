@@ -1,18 +1,27 @@
 .product-cards {
-  margin: 20px 0;
+  margin: 50px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.product-cards h1 {
+  font-size: 25px;
+  color: white;
+}
+@media (max-width: 800px) {
+  .product-cards h1 {
+    color: black;
+  }
 }
 .product-cards .product-card {
   margin: 10px 0;
   background: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   transition: transform 0.3s;
-  width: 50%;
+  width: 80%;
 }
 .product-cards .product-card .container {
-  padding: 10px 16px;
+  padding: 20px 16px;
 }
 .product-cards .product-card .container h2 {
   font-size: 25px;
@@ -22,20 +31,29 @@
   font-family: Raleway;
 }
 .review-cards {
-  margin: 20px 0;
+  margin: 50px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.review-cards h1 {
+  font-size: 25px;
+  color: white;
+}
+@media (max-width: 800px) {
+  .review-cards h1 {
+    color: black;
+  }
 }
 .review-cards .product-card {
   margin: 10px 0;
   background: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   transition: transform 0.3s;
-  width: 50%;
+  width: 80%;
 }
 .review-cards .product-card .container {
-  padding: 10px 16px;
+  padding: 20px 16px;
 }
 .review-cards .product-card .container h2 {
   font-size: 25px;
@@ -178,7 +196,7 @@ table {
 .home-nav {
   display: flex;
   justify-content: center;
-  margin-top: 10%;
+  margin-top: 5%;
   background-color: rgba(84, 84, 84, 0.49);
 }
 @media (max-width: 500px) {
@@ -188,8 +206,8 @@ table {
   }
 }
 .home-nav a {
-  margin: 10px 100px;
-  font-size: 20px;
+  margin: 10px 5%;
+  font-size: 1.25rem;
   font-family: Raleway;
   text-decoration: none;
   color: white;
@@ -202,7 +220,7 @@ table {
 @media (max-width: 800px) {
   .home-nav a {
     margin: 10px 20px;
-    font-size: 16px;
+    font-size: 1rem;
   }
 }
 @media (max-width: 500px) {
@@ -210,7 +228,7 @@ table {
     margin: 0px 0px;
     padding: 10px 0px;
     width: 100%;
-    font-size: 16px;
+    font-size: 1rem;
     border: 1px solid lightgray;
     text-align: center;
   }
@@ -222,7 +240,7 @@ table {
 }
 .site-nav a {
   margin: 10px 50px;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-family: Raleway;
   text-decoration: none;
   color: white;
@@ -233,13 +251,16 @@ table {
   transition-duration: 0.35s;
 }
 .site-header {
-  background: linear-gradient(90deg, #3b1b0f, #bd5a37, #3b1b0f);
+  background: linear-gradient(315deg, #bd5a37 0%, #3b1b0f 74%);
+  position: fixed;
   height: 75px;
   width: 100%;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
   padding-top: 0px;
   margin: 0px 0px;
+  top: 0;
 }
 .site-header h2 {
   display: flex;
@@ -258,7 +279,7 @@ table {
   background: linear-gradient(90deg, #3b1b0f, #bd5a37, #3b1b0f);
   border: 2px solid white;
   border-radius: 20px;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-family: Raleway;
   padding: 15px;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -290,28 +311,39 @@ table {
 }
 header {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   width: 90%;
-  margin: 40px auto;
+  margin: 0% auto 2% auto;
+}
+header #mobile-header-pic {
+  display: none;
 }
 @media (max-width: 800px) {
   header {
-    margin: 0px auto;
+    margin: 3% auto;
+  }
+  header #mobile-header-pic {
+    display: flex;
+    width: 80%;
+    height: 20%;
+    object-fit: fill;
   }
 }
 @media (max-width: 500px) {
   header {
-    margin: 0px auto;
+    margin: 3% auto;
   }
 }
 header h1 {
-  width: 794px;
-  height: 179px;
+  justify-content: center;
+  width: 100vw;
+  height: fit-content;
   font-family: Righteous;
   font-style: normal;
   font-weight: normal;
-  font-size: 144px;
-  line-height: 179px;
+  font-size: 7.5rem;
   /* identical to box height */
   display: flex;
   align-items: center;
@@ -327,20 +359,21 @@ header h1 #flicker-s {
 }
 @media (max-width: 800px) {
   header h1 {
-    font-size: 90px;
+    font-size: 5rem;
     display: flex;
     justify-content: center;
   }
 }
 @media (max-width: 500px) {
   header h1 {
-    font-size: 50px;
+    font-size: 3.125rem;
     display: flex;
     justify-content: center;
   }
 }
 .spacer {
-  height: 600px;
+  height: 40vh;
+  margin-bottom: 5%;
 }
 @media (max-width: 800px) {
   .spacer {
@@ -444,21 +477,35 @@ header h1 #flicker-s {
   min-height: 100%;
   z-index: -1;
 }
+@media (max-width: 800px) {
+  #myVideo {
+    display: none;
+  }
+}
 .cards {
-  margin: 20px 0;
+  margin: 50px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.cards h1 {
+  font-size: 25px;
+  color: white;
+}
+@media (max-width: 800px) {
+  .cards h1 {
+    color: black;
+  }
 }
 .cards .product-card {
   margin: 10px 0;
   background: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   transition: transform 0.3s;
-  width: 50%;
+  width: 80%;
 }
 .cards .product-card .container {
-  padding: 10px 16px;
+  padding: 20px 16px;
 }
 .cards .product-card .container h2 {
   font-size: 25px;
@@ -471,7 +518,7 @@ header h1 #flicker-s {
   transform: scale(1.2);
 }
 .reviews {
-  margin: 20px 0;
+  margin: 50px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -480,15 +527,20 @@ header h1 #flicker-s {
   font-size: 25px;
   color: white;
 }
+@media (max-width: 800px) {
+  .reviews h1 {
+    color: black;
+  }
+}
 .reviews .product-card {
   margin: 10px 0;
   background: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   transition: transform 0.3s;
-  width: 50%;
+  width: 80%;
 }
 .reviews .product-card .container {
-  padding: 10px 16px;
+  padding: 20px 16px;
 }
 .reviews .product-card .container h2 {
   font-size: 25px;
@@ -500,11 +552,22 @@ header h1 #flicker-s {
 .reviews .checked {
   color: orange;
 }
+.site-container {
+  margin-top: 100px;
+}
 .main-content {
   display: flex;
   width: 80%;
+  height: 80%;
   margin: 50px auto;
   justify-content: space-between;
+}
+@media (max-width: 800px) {
+  .main-content {
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .main-content h3 {
   font-family: 'Raleway';
@@ -516,8 +579,23 @@ header h1 #flicker-s {
   font-size: 18px;
   line-height: 25px;
 }
-.main-content .info-card {
+.main-content iframe {
   width: 45%;
+  height: 400px;
+}
+@media (max-width: 800px) {
+  .main-content iframe {
+    width: 90%;
+    margin-top: 5%;
+  }
+}
+.main-content .info-card {
+  width: 48%;
+}
+@media (max-width: 800px) {
+  .main-content .info-card {
+    width: 90%;
+  }
 }
 .main-content .info-card address {
   font-family: 'Raleway', sans-serif;
@@ -559,7 +637,7 @@ header h1 #flicker-s {
   background-image: linear-gradient(90deg, #3b1b0f, #bd5a37, #3b1b0f);
   margin: auto;
   margin-top: 30px;
-  width: 700px;
+  width: 80%;
   height: 250px;
   padding: 30px;
   border: 8px ridge #3b1b0f;
@@ -568,77 +646,94 @@ header h1 #flicker-s {
   font-style: normal;
   font-weight: normal;
   font-size: 125px;
-  line-height: auto;
   align-items: center;
   text-align: center;
   color: black;
   text-shadow: 0px 0px 30px #696969;
   -webkit-text-stroke: 3px coral;
+  margin-bottom: 30px;
+}
+@media (max-width: 800px) {
+  .AboutTitle {
+    border: none;
+    background: none;
+  }
 }
 @media (max-width: 500px) {
   .AboutTitle {
-    width: 40%;
+    width: 60%;
+    margin: 2px;
+    display: flex;
+  }
+}
+@media (max-width: 800px) {
+  .AboutTitle h2 {
+    font-size: 80%;
   }
 }
 @media (max-width: 500px) {
   .AboutTitle h2 {
-    font-size: 55px;
+    font-size: 75px;
   }
 }
 .row {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
 }
 @media (max-width: 500px) {
   .row {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+  }
+}
+@media (max-width: 800px) {
+  .row {
+    display: flex;
+    justify-content: space-around;
   }
 }
 .column {
-  margin: 30px;
-  width: 33.3%;
-  margin-bottom: 16px;
-  padding: 0 8px;
-  height: 100%;
-}
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  flex: 0 1 24%;
-  border: 8px ridge #3b1b0f;
-  height: 70%;
-  width: 70%;
-  min-width: 120px;
-  padding-top: 0;
-}
-@media (max-width: 800px) {
-  .card {
-    width: 100%;
-  }
-}
-@media (max-width: 500px) {
-  .card {
-    width: 200%;
-  }
-}
-.card img {
-  display: block;
-  border: 0;
-  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  margin: 20px;
+  width: 15%;
   height: auto;
 }
 @media (max-width: 500px) {
-  .card img {
+  .column {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    width: 75%;
   }
 }
+.card {
+  width: 110%;
+  height: 100%;
+  margin: 0 auto;
+  border: 8px ridge #3b1b0f;
+  display: flex;
+  flex-direction: column;
+}
+.card img {
+  width: 80%;
+  height: auto;
+}
 .Acontainer {
-  padding: 1.4em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: #9f9eac;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-size: cover;
+  height: 100%;
+  width: auto;
+}
+@media (max-width: 800px) {
+  .Acontainer {
+    display: flex;
+    flex-wrap: nowrap;
+  }
 }
 .Acontainer #cardname {
   text-align: center;
@@ -648,14 +743,13 @@ header h1 #flicker-s {
   text-decoration: underline ;
 }
 .Acontainer #title2 {
-  margin-top: 1px;
+  margin-top: 10px;
   text-decoration: underline;
-  text-align: center;
   color: #121212;
   font-family: Raleway;
   font-weight: bold;
 }
-.Acontainer #aboutpara {
+.Acontainer p {
   display: flex;
   justify-content: center;
   color: #121212;
@@ -663,26 +757,25 @@ header h1 #flicker-s {
   margin: 8px;
   text-align: center;
 }
-.Acontainer::after,
-.Acontainer .row::after {
-  content: "";
-  clear: both;
-  display: table;
+@media (max-width: 800px) {
+  .Acontainer p {
+    font-size: 2%;
+  }
 }
-.Acontainer::after #buttonp,
-.Acontainer .row::after #buttonp {
+.Acontainer #buttonp {
   display: flex;
   justify-content: center;
 }
 .button2 {
-  width: 200px;
+  width: 60%;
   margin: 10px;
-  font-size: 20px;
+  font-size: 5%;
+  height: auto;
   background-image: linear-gradient(90deg, #3b1b0f, #bd5a37, #3b1b0f);
   border-style: ridge;
   border-color: #121212;
-  font-family: 'Arial Black', Gadget, sans-serif;
-  padding: 15px;
+  font-family: Righteous;
+  padding: 10px;
   text-align: center;
   text-transform: uppercase;
   background-size: 200% auto;
@@ -700,25 +793,8 @@ header h1 #flicker-s {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   margin: 8px 10px 12px;
 }
-.footer {
-  margin-bottom: 0px;
-  bottom: 0px;
-  left: 0;
-  background-color: #ff4e00;
-  background-image: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
-  height: 139px;
-  width: 100%;
-  padding: 20px;
-}
-.whitetext {
-  color: white;
-  margin: 0px;
-  padding: 0px;
-}
-.whitelogo {
-  color: white;
-  font-size: 2em;
-}
-.whitelogo:hover {
-  color: lightgray;
+@media (max-width: 800px) {
+  .button2 {
+    font-size: 2%;
+  }
 }

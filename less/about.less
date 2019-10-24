@@ -11,76 +11,100 @@
 }
 .AboutTitle{
    .titlex;
+
+   margin-bottom: 30px;
+   @media @tablet{
+     border: none;
+     background: none;
+   }
+
    @media @phone{
-     width: 40%;
+     width: 60%;
+     margin:2px;
+    display:flex;
+     
    }
   h2{
-    @media @phone{
-    font-size: 55px;
+
+    @media @tablet{
+      font-size: 80%;
     }
+
+    @media @phone{
+    font-size: 75px;
+    }
+
   }
   
 }
 .row{
+
   display: flex;
    flex-wrap: wrap;
-   justify-content: center;
+   justify-content: space-around;
+
    @media @phone{
-    display: flex;
-       flex-direction: column;
+     display:flex;
+     flex-direction: column;
+     justify-content: center;
+
    }
+   @media @tablet {
+
+      display: flex;
+      justify-content: space-around;
+    }
+   
   
 }
 
-
 .column {
-   margin: 30px;
-    width: 33.3%;
-    margin-bottom: 16px;
-    padding: 0 8px;
-    height: 100%;
-    
-     }
-    
-  
-  
-  .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    flex: 0 1 24%;
-    border: 8px ridge  #3b1b0f;
-    height: 70%;
-    width: 70%;
-    min-width: 120px;
-    padding-top: 0;
-    @media @tablet{
-      width: 100%;
-    }
-    @media @phone{
-      width:200%;
-    }
-    
-    
-     
-   img{
-      display: block;
-	  border: 0;
-	  width: 100%;
+display:flex;
+ flex-flow: column wrap;
+   margin: 20px;
+    width: 15%;
     height: auto;
     @media @phone{
       display: flex;
-          flex-wrap: wrap;
-          justify-content: space-between;
-     }
+      justify-content: center;
+      width: 75%;
+ 
+    }
+ }
+    .card {
+    width: 110%;
+    height: 100%;
+    margin:0 auto;
+    border: 8px ridge  #3b1b0f;
+    display: flex;
+    flex-direction: column;
+    img{
+    width: 80%;
+    height: auto;
+   
     }
   }
 
     .Acontainer {
-    padding: 1.4em;
-    background-color:#9f9eac;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color:#9f9eac;
+      background-size: cover;
+      height: 100%;
+      width: auto;
+
+      @media @tablet {
+
+        display: flex;
+        flex-wrap: nowrap;
+      
+      }
+      
+
     
     #cardname{
-      text-align:center;
+      text-align: center;
       color: @paragraph-color;
       font-family: Raleway;
       font-weight: bold;
@@ -88,37 +112,44 @@
     }
       
       #title2 {
-        margin-top: 1px;
+        margin-top: 10px;
         text-decoration: underline;
-        text-align:center;
+        
         color: @paragraph-color;
         font-family: Raleway;
         font-weight: bold;
       }
-       #aboutpara{
+
+       p{
       display:flex;
       justify-content: center;
+
       color:  @paragraph-color;
       font-family: Raleway;
       margin: 8px;
       text-align: center;
+
+      @media @tablet {
+
+       font-size: 2%;
+      
+      }
        }
 
-      &::after, .row::after {
-    content: "";
-    clear: both;
-    display: table;
+
+      
  
   #buttonp{
     display:flex;
     justify-content: center;
     
     
+    
      
   
     }
       }
-        }
+        
           
             
           
@@ -127,8 +158,18 @@
 
   
   
+
   .button2 {
-   .button2x(200px,10px,20px);
+   .button2x(60%, 10px,5%);
+   @media @tablet {
+
+    font-size: 2%;
+  
+  }
+   
   
    
+
   }
+   
+  
