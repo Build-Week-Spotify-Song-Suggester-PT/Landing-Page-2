@@ -251,7 +251,8 @@ table {
   transition-duration: 0.35s;
 }
 .site-header {
-  background: linear-gradient(90deg, #3b1b0f, #bd5a37, #3b1b0f);
+  background: linear-gradient(315deg, #3b1b0f, #bd5a37, #3b1b0f);
+  position: fixed;
   height: 75px;
   width: 100%;
   flex-direction: row;
@@ -259,6 +260,7 @@ table {
   align-items: center;
   padding-top: 0px;
   margin: 0px 0px;
+  top: 0;
 }
 .site-header h2 {
   display: flex;
@@ -324,7 +326,7 @@ header #mobile-header-pic {
   }
   header #mobile-header-pic {
     display: flex;
-    width: 100%;
+    width: 80%;
     height: 20%;
     object-fit: fill;
   }
@@ -357,14 +359,14 @@ header h1 #flicker-s {
 }
 @media (max-width: 800px) {
   header h1 {
-    font-size: 90px;
+    font-size: 5rem;
     display: flex;
     justify-content: center;
   }
 }
 @media (max-width: 500px) {
   header h1 {
-    font-size: 50px;
+    font-size: 3.125rem;
     display: flex;
     justify-content: center;
   }
@@ -550,11 +552,22 @@ header h1 #flicker-s {
 .reviews .checked {
   color: orange;
 }
+.site-container {
+  margin-top: 100px;
+}
 .main-content {
   display: flex;
   width: 80%;
+  height: 80%;
   margin: 50px auto;
   justify-content: space-between;
+}
+@media (max-width: 800px) {
+  .main-content {
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .main-content h3 {
   font-family: 'Raleway';
@@ -566,8 +579,23 @@ header h1 #flicker-s {
   font-size: 18px;
   line-height: 25px;
 }
-.main-content .info-card {
+.main-content iframe {
   width: 45%;
+  height: 400px;
+}
+@media (max-width: 800px) {
+  .main-content iframe {
+    width: 90%;
+    margin-top: 5%;
+  }
+}
+.main-content .info-card {
+  width: 48%;
+}
+@media (max-width: 800px) {
+  .main-content .info-card {
+    width: 90%;
+  }
 }
 .main-content .info-card address {
   font-family: 'Raleway', sans-serif;
