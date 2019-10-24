@@ -63,7 +63,9 @@
   font-family: Raleway;
 }
 .review-cards .checked {
-  color: orange;
+  background: -webkit-linear-gradient(90deg, #ffcc04, #ffae00, #ffe500);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -550,7 +552,9 @@ header h1 #flicker-s {
   font-family: Raleway;
 }
 .reviews .checked {
-  color: orange;
+  background: -webkit-linear-gradient(90deg, #ffcc04, #ffae00, #ffe500);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .site-container {
   margin-top: 100px;
