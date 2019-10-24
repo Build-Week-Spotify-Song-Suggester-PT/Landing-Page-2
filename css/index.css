@@ -631,11 +631,6 @@ header h1 #flicker-s {
     background: none;
   }
 }
-@media (max-width: 800px) {
-  .AboutTitle {
-    width: 80%;
-  }
-}
 @media (max-width: 500px) {
   .AboutTitle {
     width: 120%;
@@ -643,7 +638,6 @@ header h1 #flicker-s {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
   }
 }
 @media (max-width: 800px) {
@@ -686,7 +680,6 @@ header h1 #flicker-s {
     display: flex;
     justify-content: center;
     width: 75%;
-
   }
 }
 .card {
@@ -703,8 +696,8 @@ header h1 #flicker-s {
 .Acontainer {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   background-color: #9f9eac;
-
   background-size: cover;
   height: 100%;
   width: auto;
@@ -714,9 +707,9 @@ header h1 #flicker-s {
     display: flex;
     flex-wrap: nowrap;
   }
-
 }
 .Acontainer #cardname {
+  text-align: center;
   color: #121212;
   font-family: Raleway;
   font-weight: bold;
@@ -725,22 +718,18 @@ header h1 #flicker-s {
 .Acontainer #title2 {
   margin-top: 10px;
   text-decoration: underline;
-  text-align: center;
   color: #121212;
   font-family: Raleway;
   font-weight: bold;
 }
-
 .Acontainer p {
   display: flex;
   justify-content: center;
-
   color: #121212;
   font-family: Raleway;
   margin: 8px;
   text-align: center;
 }
-
 @media (max-width: 800px) {
   .Acontainer p {
     font-size: 2%;
@@ -755,7 +744,6 @@ header h1 #flicker-s {
   margin: 10px;
   font-size: 5%;
   height: auto;
-
   background-image: linear-gradient(90deg, #3b1b0f, #bd5a37, #3b1b0f);
   border-style: ridge;
   border-color: #121212;
