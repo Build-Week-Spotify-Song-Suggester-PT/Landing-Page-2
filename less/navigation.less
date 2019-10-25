@@ -36,9 +36,9 @@
 .site-nav {
   display: flex;
   justify-content: center;
-  align-items: baseline;
   width: 50%;
   a {
+    white-space: nowrap;
     margin: 10px 5%;
     font-size: 1rem;
     font-family: Raleway;
@@ -84,13 +84,10 @@
 
 .buttons-container {
   display: flex;
-  flex-direction: row;
   justify-content: space-evenly;
   width: 20%;
   .site-sign-up-button {
     display: flex;
-    align-items: center;
-    justify-content: center;
     background: linear-gradient(90deg, #3b1b0f, #bd5a37, #3b1b0f);
     border: 2px solid white;
     border-radius: 20px;
@@ -104,6 +101,7 @@
       transition-duration: 0.35s;
     }
     a {
+      white-space: nowrap;
       text-decoration: none;
       color: white;
       &:hover {

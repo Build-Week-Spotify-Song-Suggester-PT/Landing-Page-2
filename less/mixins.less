@@ -89,7 +89,12 @@
 .review-cards {
   .product-cards();
   .checked {
-    background: -webkit-linear-gradient(90deg, #ffcc04, #ffae00, #ffe500);
+    background: -webkit-linear-gradient(
+      90deg,
+      @star-gradient1,
+      @star-gradient2,
+      @star-gradient3
+    );
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
