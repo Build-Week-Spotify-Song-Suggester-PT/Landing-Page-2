@@ -244,10 +244,11 @@ table {
   display: flex;
   justify-content: center;
   align-items: baseline;
+  width: 50%;
 }
 .site-nav a {
-  margin: 10px 50px;
-  font-size: 1.25rem;
+  margin: 10px 5%;
+  font-size: 1rem;
   font-family: Raleway;
   text-decoration: none;
   color: white;
@@ -633,6 +634,8 @@ header h1 #flicker-s {
     width: 90%;
     flex-direction: column;
     align-items: center;
+    margin-top: 300px;
+    margin-bottom: 150px;
   }
 }
 .main-content h3 {
@@ -879,6 +882,9 @@ header h1 #flicker-s {
   bottom: 0;
 }
 .whitetext {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
   font-size: 13px;
   color: white;
   margin: 0px;
