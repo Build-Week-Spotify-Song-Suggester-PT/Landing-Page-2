@@ -15,12 +15,26 @@
 }
 
 .cards {
+  margin-top: 45px;
+  strong {
+    font-weight: bold;
+  }
   .product-cards();
-  .product-card:hover {
-    transform: scale(1.2);
+  @media @tablet {
+    margin-top: 40%;
+  }
+  @media @phone {
+    margin-top: 60%;
   }
 }
 
 .reviews {
+  margin-top: 50px;
   .review-cards();
+  @media @tablet {
+    margin-bottom: 10%;
+  }
+  @media @phone {
+    margin-bottom: 20%;
+  }
 }

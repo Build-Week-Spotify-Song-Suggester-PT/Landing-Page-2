@@ -54,7 +54,6 @@
 }
 
 .product-cards {
-  margin: 50px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -82,6 +81,9 @@
       }
     }
   }
+  .product-card:hover {
+    transform: scale(1.05);
+  }
 }
 
 .review-cards {
@@ -94,13 +96,13 @@
   }
 }
 
-.flexwrapcenter(){
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.flexwrapcenter() {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.flexcenter(){
+.flexcenter() {
   display: flex;
   justify-content: center;
   align-items: center;
