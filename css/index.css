@@ -825,6 +825,9 @@ header h1 #flicker-s {
   bottom: 0;
 }
 .whitetext {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
   font-size: 13px;
   color: white;
   margin: 0px;
