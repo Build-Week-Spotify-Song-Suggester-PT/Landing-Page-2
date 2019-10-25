@@ -1,5 +1,4 @@
 .product-cards {
-  margin: 50px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -30,8 +29,10 @@
 .product-cards .product-card .container p {
   font-family: Raleway;
 }
+.product-cards .product-card:hover {
+  transform: scale(1.05);
+}
 .review-cards {
-  margin: 50px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -61,6 +62,9 @@
 }
 .review-cards .product-card .container p {
   font-family: Raleway;
+}
+.review-cards .product-card:hover {
+  transform: scale(1.05);
 }
 .review-cards .checked {
   background: -webkit-linear-gradient(90deg, #ffcc04, #ffae00, #ffe500);
@@ -268,6 +272,7 @@ table {
   padding: 10px;
   margin: 0px 0px;
   top: 0;
+  z-index: 1;
 }
 .site-header h2 {
   display: flex;
@@ -302,9 +307,29 @@ table {
   padding: 15px;
   cursor: pointer;
 }
+.buttons-container .site-sign-up-button:hover {
+  box-shadow: 0px 0px 15px #FBCA6D;
+  border: 2px solid #FBCA6D;
+  transition-duration: 0.35s;
+}
 .buttons-container .site-sign-up-button a {
   text-decoration: none;
   color: white;
+}
+.buttons-container .site-sign-up-button a:hover {
+  text-shadow: 0px 0px 15px #FBCA6D;
+  color: #FBCA6D;
+  transition-duration: 0.35s;
+}
+@media (max-width: 800px) {
+  .buttons-container {
+    width: 30%;
+  }
+}
+@media (max-width: 500px) {
+  .buttons-container {
+    width: 45%;
+  }
 }
 .signbody {
   background: url("../Images/mohammad-metri-1oKxSKSOowE-unsplash.jpg") no-repeat center center fixed;
@@ -494,10 +519,13 @@ header h1 #flicker-s {
   }
 }
 .cards {
-  margin: 50px 0;
+  margin-top: 45px;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.cards strong {
+  font-weight: bold;
 }
 .cards h1 {
   font-size: 25px;
@@ -526,10 +554,20 @@ header h1 #flicker-s {
   font-family: Raleway;
 }
 .cards .product-card:hover {
-  transform: scale(1.2);
+  transform: scale(1.05);
+}
+@media (max-width: 800px) {
+  .cards {
+    margin-top: 40%;
+  }
+}
+@media (max-width: 500px) {
+  .cards {
+    margin-top: 60%;
+  }
 }
 .reviews {
-  margin: 50px 0;
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -560,11 +598,24 @@ header h1 #flicker-s {
 .reviews .product-card .container p {
   font-family: Raleway;
 }
+.reviews .product-card:hover {
+  transform: scale(1.05);
+}
 .reviews .checked {
   background: -webkit-linear-gradient(90deg, #ffcc04, #ffae00, #ffe500);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+@media (max-width: 800px) {
+  .reviews {
+    margin-bottom: 10%;
+  }
+}
+@media (max-width: 500px) {
+  .reviews {
+    margin-bottom: 20%;
+  }
 }
 .site-container {
   margin-top: 100px;
