@@ -203,7 +203,6 @@ table {
 .home-nav {
   display: flex;
   justify-content: center;
-  margin-top: 5%;
   background-color: rgba(84, 84, 84, 0.49);
 }
 @media (max-width: 500px) {
