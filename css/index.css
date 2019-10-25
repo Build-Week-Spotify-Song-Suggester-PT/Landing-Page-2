@@ -261,6 +261,7 @@ table {
 @media (max-width: 800px) {
   .site-nav {
     flex-direction: column;
+    align-items: center;
   }
 }
 .site-header {
